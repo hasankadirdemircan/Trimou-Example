@@ -37,8 +37,8 @@ public class SendMailService {
     }
 
     //if you need add path like language you can add.
-    //hierarchy is like template.en/test.html
-    //   template.tr/test.html
+    //hierarchy is like template.en/welcome.html
+    //   template.tr/welcome.html
     public String createMailPath(EmailRequest emailRequest) {
         return // "/" + emailRequest.getLanguage()
                  "/" + emailRequest.getEmailName();
